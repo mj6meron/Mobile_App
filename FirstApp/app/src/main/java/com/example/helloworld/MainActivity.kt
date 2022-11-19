@@ -11,17 +11,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
         // get reference to button
         val buttonClickMe = findViewById(R.id.button) as Button
         var myTextView = findViewById(R.id.textView) as TextView
         var timeClicked = 0
 // set on-click listener
         buttonClickMe.setOnClickListener {
-            timeClicked+=1
+            timeClicked-=1
             myTextView.text = timeClicked.toString()
-            Toast.makeText(this@MainActivity, "Hi there", Toast.LENGTH_SHORT).show()
+            // Toast.makeText(this@MainActivity, " it's running =) ", Toast.LENGTH_SHORT).show()
         }
     }
 }
-
-

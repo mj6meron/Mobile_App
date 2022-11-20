@@ -1,4 +1,4 @@
-# Mobile_App
+# Mobile_App - Age in minutes calculator - lol first app for fun
 A simple Android mobile App Using kotlin
 
 
